@@ -1,5 +1,5 @@
 - name: Ansible Playbook to Install and Setup Apache on Ubuntu
-  hosts: servidor apache
+  hosts: servidor_apache
   become: yes
   tasks:
     - name: Install latest version of Apache
