@@ -1,8 +1,8 @@
 ---
 - name: Apache server instalado
-   become: yes
+  become: yes
   tasks:
   - name: Ultima versao do apache server instalado
-    yum:
-      name: httpd
+    apt:
+      name: apache2
       state: latest
