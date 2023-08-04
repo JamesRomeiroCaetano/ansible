@@ -1,0 +1,8 @@
+---
+- name: Apache server instalado
+   become: yes
+  tasks:
+  - name: Ultima versao do apache server instalado
+    yum:
+      name: httpd
+      state: latest
