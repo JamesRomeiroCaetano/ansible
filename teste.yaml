@@ -1,8 +1,6 @@
----
-- name: Apache server instalado
+- name: Ansible Playbook to Install and Setup Apache on Ubuntu
+  hosts: servidor apache
   become: yes
   tasks:
-  - name: Ultima versao do apache server instalado
-    apt:
-      name: apache2
-      state: latest
+    - name: Install latest version of Apache
+      apt: name=apache2 update_cache=yes state=latest
