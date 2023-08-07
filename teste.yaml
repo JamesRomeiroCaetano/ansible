@@ -1,5 +1,5 @@
 - name: Ansible Playbook to Install and Setup Apache on Ubuntu
-  hosts: TESTE_INVENTARIO
+  hosts: 192.168.101.84
   become: yes
   tasks:
     - name: Install latest version of Apache
